@@ -54,7 +54,7 @@ btnFinalizar.onclick = async () => {
         btnFinalizar.style.backgroundColor = "#25D366";
 
         setTimeout(() => {
-            window.location.href = `https://www.instagram.com/${instagramUser}/`;
+            window.location.href = `https://ig.me/m/${instagramUser}`;
         }, 1000);
 
     } catch (err) {
