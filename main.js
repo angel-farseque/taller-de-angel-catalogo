@@ -43,7 +43,7 @@ function mostrarResumen() {
 // 5. El Corazón del MVP: Copiar y Redirigir
 btnFinalizar.onclick = async () => {
     const textoACopiar = summaryText.innerText;
-    const instagramUser = "tu_usuario"; // <--- Cambia esto
+    const instagramUser = "taller_de_angel_"; // <--- Cambia esto
 
     try {
         await navigator.clipboard.writeText(textoACopiar);
