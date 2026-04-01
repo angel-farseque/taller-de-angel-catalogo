@@ -13,6 +13,7 @@ const stepSelection = document.getElementById('step-selection');
 const stepSummary = document.getElementById('step-summary');
 const summaryText = document.getElementById('summary-text');
 const btnFinalizar = document.getElementById('btn-copy-redirect');
+const btnBack = document.getElementById('btn-back');
 
 // 3. Renderizar Catálogo
 function renderCatalog() {
@@ -59,6 +60,19 @@ btnFinalizar.onclick = async () => {
     } catch (err) {
         alert("No se pudo copiar automáticamente. Por favor, selecciona el texto y cópialo manualmente.");
     }
+};
+
+btnBack.onclick = () => {
+    // Vaciar el carrito para un nuevo pedido
+    carrito = []; 
+    
+    // Alternar visibilidad de las secciones
+    stepSummary.style.display = 'none';
+    stepSelection.style.display = 'block';
+    
+    // Restaurar el texto del botón de finalizar por si ya se había usado
+    btnFinalizar.innerText = "Copiar Resumen y abrir Instagram";
+    btnFinalizar.style.background = ""; // Vuelve al gradiente del CSS
 };
 
 // Inicializar
