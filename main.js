@@ -18,6 +18,10 @@ const productos = [
             { nombre: "Ramo Bouquet",
 	      precio: "35.00",
 	      img: "img/ramo-bouquet-v1.webp",
+	      desc: "Ramo de miniflores azules + tarjetita decorada para escribir" },
+                        { nombre: "Ramo Bouquet",
+	      precio: "35.00",
+	      img: "img/ramo-bouquet-v2.webp",
 	      desc: "Ramo de miniflores azules + tarjetita decorada para escribir" }
         ]
     },
@@ -127,7 +131,7 @@ function render() {
                         <div class="info">
                             <h3>${v.nombre}</h3>
                             <p>${v.desc}</p>
-                            <div class="precio">$${v.precio}</div>
+                            <div class="precio">S/${v.precio}</div>
                         </div>
                     </div>
                 `).join('')}
