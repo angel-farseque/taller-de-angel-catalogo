@@ -18,11 +18,11 @@ const productos = [
             { nombre: "Ramo Bouquet",
 	      precio: "35.00",
 	      img: "img/ramo-bouquet-v1.webp",
-	      desc: "Ramo de miniflores azules + tarjetita decorada para escribir" },
-                        { nombre: "Ramo Bouquet",
+	      desc: "Ramo de miniflores azules + minitarjetita personalizada" },
+            { nombre: "Ramo Bouquet",
 	      precio: "35.00",
 	      img: "img/ramo-bouquet-v2.webp",
-	      desc: "Ramo de miniflores azules + tarjetita decorada para escribir" }
+	      desc: "Ramo de miniflores azules + minitarjetita personalizada" }
         ]
     },
     {
@@ -31,7 +31,7 @@ const productos = [
             { nombre: "Tulipán Premium",
 	      precio: "12.00",
 	      img: "img/tulipan-premium.webp",
-	      desc: "1 tulipán azul en ramo + espacio para escribir" }
+	      desc: "1 tulipán azul en ramo + mensaje en portada" }
         ]
     },
     {
@@ -40,7 +40,7 @@ const productos = [
             { nombre: "Mi Rayito de Luz",
 	      precio: "20.00",
 	      img: "img/mi-rayito-de-luz.webp",
-	      desc: "1 girasol + 4 margaritas + 1 hoja de eucalipto + espacio para escribir" }
+	      desc: "1 girasol + 4 margaritas + 1 hoja de eucalipto + mensaje en portada" }
         ]
     },
     {
@@ -49,7 +49,7 @@ const productos = [
             { nombre: "Mi Solecito de Mediodía",
 	      precio: "30.00",
 	      img: "img/mi-solecito-de-mediodia.webp",
-	      desc: "3 girasoles + 8 margaritas + 2 hojas de eucalipto + espacio para escribir" }
+	      desc: "3 girasoles + 8 margaritas + 2 hojas de eucalipto + mensaje en portada" }
         ]
     },
     {
@@ -58,15 +58,15 @@ const productos = [
             { nombre: "I Loviu (Rojo)",
 	      precio: "30.00",
 	      img: "img/i-loviu-vrojo.webp",
-	      desc: "3 tulipanes rojos + espacio para escribir" },
+	      desc: "3 tulipanes rojos + mensaje en portada" },
             { nombre: "I Loviu (Rosa)",
 	      precio: "30.00",
 	      img: "img/i-loviu-vrosa.webp",
-	      desc: "3 tulipanes rosas + espacio para escribir" },
+	      desc: "3 tulipanes rosas + mensaje en portada" },
             { nombre: "I Loviu (Lila)",
 	      precio: "30.00",
 	      img: "img/i-loviu-vlila.webp",
-	      desc: "3 tulipanes lilas + espacio para escribir" }
+	      desc: "3 tulipanes lilas + mensaje en portada" }
         ]
     },
         {
@@ -75,7 +75,7 @@ const productos = [
             { nombre: "Mi Pequeño Delirio",
 	      precio: "15.00",
 	      img: "img/mi-pequeño-delirio.webp",
-	      desc: "1 lirio azul o blanco + espacio para escribir" }
+	      desc: "1 lirio azul o blanco + mensaje en portada" }
         ]
     },
     {
@@ -84,7 +84,7 @@ const productos = [
             { nombre: "Dulce Delirio",
 	      precio: "30.00",
 	      img: "img/dulce-delirio.webp",
-	      desc: "2 lirios rosados + 4 margaritas (versión girasol) + 2 hojas de eucalipto + espacio para escribir" }
+	      desc: "2 lirios rosados + 4 margaritas (versión girasol) + 2 hojas de eucalipto + mensaje en portada" }
         ]
     },
     {
