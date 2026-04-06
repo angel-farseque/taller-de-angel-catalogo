@@ -122,22 +122,45 @@ const productos = [
 const container = document.getElementById('catalogo');
 
 function render() {
-    container.innerHTML = productos.map(p => `
-        <div class="card">
-            <div class="slider">
-                ${p.variantes.map(v => `
-                    <div class="slide">
-                        <img src="${v.img}" alt="${v.nombre}">
-                        <div class="info">
-                            <h3>${v.nombre}</h3>
-                            <p>${v.desc}</p>
-                            <div class="precio">S/${v.precio}</div>
-                        </div>
-                    </div>
+    container.innerHTML = productos.map(p => {
+        const total = p.variantes.length;
+        
+        // Creamos los puntitos (solo si hay más de 1 variante)
+        const dots = total > 1 ? `
+            <div class="dots-container">
+                ${p.variantes.map((_, index) => `
+                    <span class="dot ${index === 0 ? 'active' : ''}"></span>
                 `).join('')}
             </div>
-        </div>
-    `).join('');
+        ` : '';
+
+        // Creamos el contador (solo si hay más de 1 variante)
+        const counter = total > 1 ? `
+            <div class="counter">1 / ${total}</div>
+        ` : '';
+
+        return `
+            <div class="card">
+                ${counter}
+                
+                <div class="slider">
+                    ${p.variantes.map(v => `
+                        <div class="slide">
+                            <img src="${v.img}" alt="${v.nombre}">
+                        </div>
+                    `).join('')}
+                </div>
+
+                ${dots}
+
+                <div class="info">
+                    <h3>${p.variantes[0].nombre}</h3>
+                    <p>${p.variantes[0].desc}</p>
+                    <div class="precio">S/${p.variantes[0].precio}</div>
+                </div>
+            </div>
+        `;
+    }).join('');
 }
 
 render();

@@ -45,6 +45,39 @@ header p { font-style: italic; color: #888; }
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
+.counter {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro traslúcido */
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    z-index: 10; /* Para que esté por encima de la imagen */
+    backdrop-filter: blur(4px); /* Efecto de vidrio esmerilado */
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px 0 5px 0; /* Espacio entre slider e info */
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #d4a373; /* El color dorado de tu marca */
+    transform: scale(1.2);
+}
+
 .slider {
     display: flex;
     width: 100%;
