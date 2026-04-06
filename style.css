@@ -51,53 +51,6 @@ header p { font-style: italic; color: #888; }
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.slider::-webkit-scrollbar {
-    display: none;
-}
-
-.slider-wrapper {
-    position: relative;
-    width: 100%;
-}
-
-.btn-nav {
-    display: none; /* Ocultas por defecto (Móvil) */
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.7);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    z-index: 10;
-    transition: background 0.3s;
-    font-size: 1.2rem;
-}
-
-.btn-nav:hover { background: white; }
-.prev { left: 10px; }
-.next { right: 10px; }
-
-@media (min-width: 768px) {
-    .btn-nav {
-        display: flex; /* Aparecen en PC */
-        align-items: center;
-        justify-content: center;
-    }
-    
-    /* El slider en PC ya no debe mostrar la barra de scroll */
-    .slider {
-        scrollbar-width: none; /* Firefox */
-    }
-    .slider::-webkit-scrollbar {
-        display: none; /* Chrome/Safari */
-    }
 }
 
 .slide {

@@ -5,20 +5,24 @@ const productos = [
             { nombre: "Ramito de Abejitas",
 	      precio: "35.00",
 	      img: "img/ramito-de-abejitas-v1.webp",
-	      desc: "Ramo de minigirasoles + abejas papercraft + cartel de corazón + luces LED" },
+	      desc: "Ramo de minigirasoles + abejas papercraft + cartel de corazón" },
             { nombre: "Ramito de Abejitas con Luces",
-	      precio: "35.00",
+	      precio: "40.00",
 	      img: "img/ramito-de-abejitas-vluces.webp",
-	      desc: "Ramo de miniflores amarillas + abejas papercraft + cartel de corazón + luces LED" }
+	      desc: "Ramo de miniflores amarillas + abejas papercraft + cartel de corazón + Luces LED" }
         ]
     },
         {
         id: "ramo-bouquet",
         variantes: [
             { nombre: "Ramo Bouquet",
-	      precio: "20.00",
-	      img: "img/ramo-bouquet.webp",
-	      desc: "Ramo de miniflores azules + minitarjetita personalizada" }
+	      precio: "35.00",
+	      img: "img/ramo-bouquet-v1.webp",
+	      desc: "Ramo de miniflores azules + tarjetita decorada para escribir" },
+                        { nombre: "Ramo Bouquet",
+	      precio: "35.00",
+	      img: "img/ramo-bouquet-v2.webp",
+	      desc: "Ramo de miniflores azules + tarjetita decorada para escribir" }
         ]
     },
     {
@@ -27,7 +31,7 @@ const productos = [
             { nombre: "Tulipán Premium",
 	      precio: "12.00",
 	      img: "img/tulipan-premium.webp",
-	      desc: "1 tulipán azul en ramo + mensaje en portada" }
+	      desc: "1 tulipán azul en ramo + espacio para escribir" }
         ]
     },
     {
@@ -36,7 +40,7 @@ const productos = [
             { nombre: "Mi Rayito de Luz",
 	      precio: "20.00",
 	      img: "img/mi-rayito-de-luz.webp",
-	      desc: "1 girasol + 4 margaritas + 1 hoja de eucalipto + mensaje en portada" }
+	      desc: "1 girasol + 4 margaritas + 1 hoja de eucalipto + espacio para escribir" }
         ]
     },
     {
@@ -45,7 +49,7 @@ const productos = [
             { nombre: "Mi Solecito de Mediodía",
 	      precio: "30.00",
 	      img: "img/mi-solecito-de-mediodia.webp",
-	      desc: "3 girasoles + 8 margaritas + 2 hojas de eucalipto + mensaje en portada" }
+	      desc: "3 girasoles + 8 margaritas + 2 hojas de eucalipto + espacio para escribir" }
         ]
     },
     {
@@ -54,24 +58,24 @@ const productos = [
             { nombre: "I Loviu (Rojo)",
 	      precio: "30.00",
 	      img: "img/i-loviu-vrojo.webp",
-	      desc: "3 tulipanes rojos + mensaje en portada" },
+	      desc: "3 tulipanes rojos + espacio para escribir" },
             { nombre: "I Loviu (Rosa)",
 	      precio: "30.00",
 	      img: "img/i-loviu-vrosa.webp",
-	      desc: "3 tulipanes rosas + mensaje en portada" },
+	      desc: "3 tulipanes rosas + espacio para escribir" },
             { nombre: "I Loviu (Lila)",
 	      precio: "30.00",
 	      img: "img/i-loviu-vlila.webp",
-	      desc: "3 tulipanes lilas + mensaje en portada" }
+	      desc: "3 tulipanes lilas + espacio para escribir" }
         ]
     },
         {
         id: "mi-pequeño-delirio",
         variantes: [
             { nombre: "Mi Pequeño Delirio",
-	      precio: "12.00 por unidad",
+	      precio: "15.00",
 	      img: "img/mi-pequeño-delirio.webp",
-	      desc: "1 lirio azul o blanco + mensaje en portada" }
+	      desc: "1 lirio azul o blanco + espacio para escribir" }
         ]
     },
     {
@@ -80,15 +84,15 @@ const productos = [
             { nombre: "Dulce Delirio",
 	      precio: "30.00",
 	      img: "img/dulce-delirio.webp",
-	      desc: "2 lirios rosados + 4 margaritas (versión girasol) + 2 hojas de eucalipto + mensaje en portada" }
+	      desc: "2 lirios rosados + 4 margaritas (versión girasol) + 2 hojas de eucalipto + espacio para escribir" }
         ]
     },
     {
-        id: "lirios-para-mi-delirio",
+        id: "lirio-para-mi-delirio",
         variantes: [
-            { nombre: "Lirios para Mi Delirio",
-	      precio: "30.00",
-	      img: "img/lirios-para-mi-delirio.webp",
+            { nombre: "Lirio para Mi Delirio",
+	      precio: "35.00",
+	      img: "img/lirio-para-mi-delirio.webp",
 	      desc: "3 lirios lilas auténticos con estambres" }
         ]
     },
@@ -120,37 +124,20 @@ const container = document.getElementById('catalogo');
 function render() {
     container.innerHTML = productos.map(p => `
         <div class="card">
-            <div class="slider-wrapper">
-                <button class="btn-nav prev" onclick="moveSlider(this, -1)">&#10094;</button>
-                <button class="btn-nav next" onclick="moveSlider(this, 1)">&#10095;</button>
-
-                <div class="slider">
-                    ${p.variantes.map(v => `
-                        <div class="slide">
-                            <img src="${v.img}" alt="${v.nombre}">
-                            <div class="info">
-                                <h3>${v.nombre}</h3>
-                                <p>${v.desc}</p>
-                                <div class="precio">S/${v.precio}</div>
-                            </div>
+            <div class="slider">
+                ${p.variantes.map(v => `
+                    <div class="slide">
+                        <img src="${v.img}" alt="${v.nombre}">
+                        <div class="info">
+                            <h3>${v.nombre}</h3>
+                            <p>${v.desc}</p>
+                            <div class="precio">S/${v.precio}</div>
                         </div>
-                    `).join('')}
-                </div>
+                    </div>
+                `).join('')}
             </div>
         </div>
     `).join('');
-}
-
-function moveSlider(button, direction) {
-    // Buscamos el slider que está dentro del mismo wrapper que el botón
-    const slider = button.parentElement.querySelector('.slider');
-    // El ancho de una tarjeta (100% del slider)
-    const scrollAmount = slider.clientWidth;
-    
-    slider.scrollBy({
-        left: scrollAmount * direction,
-        behavior: 'smooth'
-    });
 }
 
 render();
