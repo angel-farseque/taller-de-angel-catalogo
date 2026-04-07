@@ -18,7 +18,7 @@ const productos = [
             { nombre: "Ramo Bouquet",
 	      precio: "20.00",
 	      img: "img/ramo-bouquet.webp",
-	      desc: "Ramo de miniflores azules + minitarjetita personalizada" }
+	      desc: "Ramo de miniflores (color a su elección) + minitarjetita personalizada" }
         ]
     },
     {
@@ -95,22 +95,22 @@ const productos = [
     {
         id: "te-quiero-de-forma-verdadera",
         variantes: [
-            { nombre: "Te Quiero de Forma Verdadera",
+            { nombre: "Te Quiero de Forma Verdadera (Color a su elección)",
 	      precio: "40.00",
 	      img: "img/te-quiero-de-forma-verdadera-vluznatural.webp",
-	      desc: "5 gerberas + 2 hojas de eucalipto + 2 hojas de nubes" },
-            { nombre: "Te Quiero de Forma Verdadera",
+	      desc: "5 gerberas (color a su elección) + 2 hojas de eucalipto + 2 hojas de nubes" },
+            { nombre: "Te Quiero de Forma Verdadera (Color a su elección)",
 	      precio: "40.00",
 	      img: "img/te-quiero-de-forma-verdadera-vrosa.webp",
-	      desc: "5 gerberas + 2 hojas de eucalipto + 2 hojas de nubes" },
-            { nombre: "Te Quiero de Forma Verdadera",
+	      desc: "5 gerberas (color a su elección) + 2 hojas de eucalipto + 2 hojas de nubes" },
+            { nombre: "Te Quiero de Forma Verdadera (Color a su elección)",
 	      precio: "40.00",
 	      img: "img/te-quiero-de-forma-verdadera-vblanco.webp",
-	      desc: "5 gerberas + 2 hojas de eucalipto + 2 hojas de nubes" },
-            { nombre: "Te Quiero de Forma Verdadera",
+	      desc: "5 gerberas (color a su elección) + 2 hojas de eucalipto + 2 hojas de nubes" },
+            { nombre: "Te Quiero de Forma Verdadera (Color a su elección)",
 	      precio: "40.00",
 	      img: "img/te-quiero-de-forma-verdadera-vlila.webp",
-	      desc: "5 gerberas + 2 hojas de eucalipto + 2 hojas de nubes" }
+	      desc: "5 gerberas (color a su elección) + 2 hojas de eucalipto + 2 hojas de nubes" }
         ]
     }
 ];
