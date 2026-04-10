@@ -15,7 +15,7 @@ const productos = [
         {
         id: "ramo-bouquet",
         variantes: [
-            { nombre: "Ramo Bouquet",
+            { nombre: "Ramo Kemonito",
 	      precio: "20.00",
 	      img: "img/ramo-bouquet.webp",
 	      desc: "Ramo de miniflores (color a su elección) + minitarjetita personalizada" }
